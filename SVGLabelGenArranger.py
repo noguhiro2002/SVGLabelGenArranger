@@ -22,10 +22,10 @@ class QRCodeLabelGenerator:
 
     def qrcodeGenerate(self):
         qr = qrcode.QRCode(
-        version=4,
-        error_correction=qrcode.constants.ERROR_CORRECT_L,
-        box_size=2,
-        border=2
+        # version=10,
+        error_correction=qrcode.constants.ERROR_CORRECT_H,
+        # box_size=2,
+        # border=4
         )
 
         qr.add_data(self.seatUuid)
